@@ -22,15 +22,15 @@ public class Persoa {
     
     
     //public void mostrarDatos(String nomePer1,int pesoPer1,String nomePer2,int pesoPer2){
-    public void mostrarDatos(Persoa persoa2){
+    public String  mostrarDatos(Persoa persoa2){
         
     if(peso > persoa2.peso){
-       System.out.println("Persoa con nome "+nome+" Pesa "+peso+" y la diferencia "+(peso-persoa2.peso));
+       return ("Persoa con nome "+nome+" Pesa "+peso+" y la diferencia "+(peso-persoa2.peso));
     }
     else if (persoa2.peso > peso){
-       System.out.println("Persoa con nome "+persoa2.nome+" Pesa "+persoa2.peso+" y la diferencia "+(persoa2.peso-peso));
+       return("Persoa con nome "+persoa2.nome+" Pesa "+persoa2.peso+" y la diferencia "+(persoa2.peso-peso));
     }
     else
-       System.out.println("Tienen el mismo peso");
+       return("Tienen el mismo peso");
 }
 }

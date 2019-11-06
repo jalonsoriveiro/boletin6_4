@@ -34,8 +34,8 @@ public class Boletin6_4 {
         int pesoPer2 = sc.nextInt();
         Persoa persoa2 = new Persoa(nombrePer2,pesoPer2);
         
-        persoa1.mostrarDatos(persoa2);
-        
+        String var1  = persoa1.mostrarDatos(persoa2);
+        System.out.println(var1);
     }
     
 }
